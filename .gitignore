@@ -13,7 +13,8 @@
 
 # IntelliJ
 /out/
-
+index.php
+token/index.php
 # mpeltonen/sbt-idea plugin
 .idea_modules/
 

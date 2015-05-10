@@ -13,7 +13,7 @@ class	Scanner
     protected	$httpClient;
     /**
      *	Constructor
-     *	@param	array	$urls	An	array	of	URLs	to	scan
+     *	@param	array	$urls	An	array	of	URLs to	scan
      */
     public	function	__construct(array	$urls)
     {
@@ -51,5 +51,20 @@ class	Scanner
     {
         $httpResponse	=	$this->httpClient->options($url);
         return	$httpResponse->getStatusCode();
+    }
+
+    /**
+     *	Get	HTTP	content	for	URL
+     *	@param	string	$url	The	remote	URL
+     *	@return	int	The	HTTP	status	code
+     */
+    public	function	getContentForUrl($index=0)
+    {
+        $httpResponse	=	$this->httpClient->options($this->urls[$index]);
+        return	$httpResponse->getBody();
+    }
+
+    public function toString(){
+        return false;
     }
 }
