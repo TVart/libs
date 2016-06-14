@@ -1,8 +1,8 @@
 {
-  "name": "tvart/coinbase",
-  "description": "app using coinbase api",
-  "keywords":	["url",	"scanner",	"csv"],
-  "homepage":	"http://vartan.torossian.com",
+  "name": "tvart/libs",
+  "description": "usefull libs to parse files in xml or csv format, retreive them or send using http or ftp protocols",
+  "keywords":	["import",	"export","feed","xml","csv","ftp","http","curl"],
+  "homepage":	"https://github.com/TVart",
   "minimum-stability": "stable",
   "license": "MIT License",
   "authors": [
@@ -12,11 +12,13 @@
     }
   ],
   "require": {
+    "monolog/monolog": "^1.19",
+    "phpunit/phpunit": "4.1",
     "guzzlehttp/guzzle": "~5.0"
   },
   "autoload":	{
     "psr-4":	{
-      "Tvart\\Coinbase\\":	"src/"
+      "Tvart\\Libs\\":	"src/"
     }
   }
 
