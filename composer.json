@@ -18,7 +18,8 @@
   },
   "autoload":	{
     "psr-4":	{
-      "Tvart\\Libs\\":	"src/"
+      "Tvart\\Libs\\":	"src/",
+      "Tvart\\Libs\\Tests":	"tests/"
     }
   }
 
